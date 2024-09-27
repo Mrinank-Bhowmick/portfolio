@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Sidebar = () => {
   return (
     <div>
-      <div className="h-screen w-80 items-center p-8">
+      <div className="h-screen w-[25vw] items-center p-8">
         <div className="bg-custom-dark-gray h-full w-full border border-custom-border-gray rounded-3xl flex flex-col items-center p-14">
           <div className="flex flex-col gap-3">
             <div className="bg-custom-light-gray p-5 rounded-3xl brightness-90">
@@ -15,6 +15,9 @@ const Sidebar = () => {
             </div>
             <div className="font-bold text-3xl text-center brightness-75">
               Mrinank Bhowmick
+            </div>
+            <div className="font-bold text-center text-sm brightness-90 bg-custom-light-gray p-1 rounded-xl">
+              Software Developer and Engineer
             </div>
             <hr className="w-full border-t-2 border-custom-border-gray my-4" />
             <div className="flex flex-col gap-3">
