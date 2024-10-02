@@ -1,6 +1,7 @@
 import React from "react";
 import streaklensImg from "../../../public/streaklens.png";
 import garudaImg from "../../../public/Garuda.jpg";
+import toxicityapi from "../../../public/toxicity-api.jpg";
 import Image from "next/image";
 import { Project } from "@/components/projectSection";
 
@@ -10,13 +11,20 @@ const Projects = () => {
       <div className="text-3xl text-yellow-500 font-bold mt-4 mb-10">
         Projects
       </div>
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         <Project
           title="Streaklens"
           description="Generative AI web app designed to assist content creators in generating innovative ideas for their next piece of content."
           projectImg={streaklensImg}
           liveLink="https://streaklens.mrinank.me"
           codeLink="https://github.com/Mrinank-Bhowmick/streaklens"
+        />
+        <Project
+          title="Toxicity API"
+          description="Designed to analyze text and detect harmful or abusive language with precision."
+          projectImg={toxicityapi}
+          liveLink={"https://toxicity.mrinank.me/"}
+          codeLink="https://github.com/Mrinank-Bhowmick/toxicity-API"
         />
         <Project
           title="Garuda"
