@@ -9,13 +9,7 @@ const Education = () => {
       description:
         "Bachelor of Technology, Major in Computer Science and Engineering.",
     },
-    {
-      school: "Hariyana Vidya Mandir",
-      location: "Kolkata/India",
-      duration: "2020 — 2022",
-      description:
-        "All India Senior School Certificate Examination, Major in Science",
-    },
+  
   ];
   return (
     <div>
