@@ -1,23 +1,25 @@
 import React from "react";
 import streaklensImg from "../../../public/streaklens.png";
 import garudaImg from "../../../public/Garuda.jpg";
+import resqhealthImg from "../../../public/resqhealth.png";
 import toxicityapi from "../../../public/toxicity-api.jpg";
 import Image from "next/image";
 import { Project } from "@/components/projectSection";
 
 const Projects = () => {
   return (
-    <div>
-      <div className="text-3xl text-yellow-500 font-bold mt-4 mb-10">
+    <section className="container mx-auto px-4 py-8">
+      <h2 className="text-3xl sm:text-4xl text-yellow-500 font-bold mb-8 sm:mb-12">
         Projects
-      </div>
-      <div className="grid md:grid-cols-2 gap-4">
+      </h2>
+
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
         <Project
-          title="Streaklens"
-          description="Generative AI web app designed to assist content creators in generating innovative ideas for their next piece of content."
-          projectImg={streaklensImg}
-          liveLink="https://streaklens.mrinank.me"
-          codeLink="https://github.com/Mrinank-Bhowmick/streaklens"
+          title="Res-Q Health"
+          description="Built an AI-driven healthcare agent leveraging LLMs, vector databases, and sustainable serverless architecture for personalized public health support."
+          projectImg={resqhealthImg}
+          liveLink="resq-health.vercel.app"
+          codeLink="https://github.com/Mrinank-Bhowmick/Res-Q-Health"
         />
         <Project
           title="Toxicity API"
@@ -27,6 +29,13 @@ const Projects = () => {
           codeLink="https://github.com/Mrinank-Bhowmick/toxicity-API"
         />
         <Project
+          title="Streaklens"
+          description="Generative AI web app designed to assist content creators in generating innovative ideas for their next piece of content."
+          projectImg={streaklensImg}
+          liveLink="https://streaklens.mrinank.me"
+          codeLink="https://github.com/Mrinank-Bhowmick/streaklens"
+        />
+        <Project
           title="Garuda"
           description="It is a combination of Network Port Scanner and Honeypot."
           projectImg={garudaImg}
@@ -34,50 +43,56 @@ const Projects = () => {
           codeLink="https://github.com/Mrinank-Bhowmick/garuda"
         />
       </div>
-      <div className="text-3xl text-yellow-500 font-bold mt-12 mb-10">
+
+      <h2 className="text-3xl sm:text-4xl text-yellow-500 font-bold mt-12 sm:mt-16 mb-8 sm:mb-12">
         Open Source Contributions
-      </div>
-      <div className="">
-        <div className="text-2xl font-semibold ml-4 mb-4">
-          OWASP Foundation - Nettacker
-        </div>
-        <div className="flex flex-col-reverse md:flex-row md:ml-8 ml-4 justify-between">
-          <div>
-            <ul className="list-disc p-2 font-thin brightness-75">
-              <li>
-                Added POP3 brute force modules and expanded the tool&apos;s
-                capabilities and potential impact in identifying security
-                vulnerabilities.
-              </li>
-              <li>
-                Fixed language library issues which improved the tool&apos;s
-                user experience, potentially leading to increased adoption and
-                usage.
-              </li>
-              <li>
-                Translated the tool into Bengali language which increased
-                accessibility and potential user base in Bengali-speaking
-                regions.
-              </li>
-            </ul>
+      </h2>
+
+      <div className="space-y-8 sm:space-y-12">
+        <div className="contribution-section">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+            OWASP Foundation - Nettacker
+          </h3>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <ul className="list-disc pl-4 sm:pl-5 space-y-2 sm:space-y-3 text-neutral-300 text-sm sm:text-base">
+                <li>
+                  Added POP3 brute force modules and expanded the tool&apos;s
+                  capabilities and potential impact in identifying security
+                  vulnerabilities.
+                </li>
+                <li>
+                  Fixed language library issues which improved the tool&apos;s
+                  user experience, potentially leading to increased adoption and
+                  usage.
+                </li>
+                <li>
+                  Translated the tool into Bengali language which increased
+                  accessibility and potential user base in Bengali-speaking
+                  regions.
+                </li>
+              </ul>
+            </div>
+            <div className="w-full md:w-1/2 aspect-video relative order-1 md:order-2">
+              <Image
+                className="rounded-xl object-cover border border-neutral-700 hover:brightness-100 transition-all"
+                src="/nettacker.png"
+                alt="Nettacker Project"
+                priority
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
           </div>
-          <div className="h-[30vh] w-[60vw] relative">
-            <Image
-              className="rounded-xl object-cover border border-white brightness-90"
-              src="/nettacker.png"
-              alt=""
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              fill
-            />
-          </div>
         </div>
-        <div className="text-2xl font-semibold mt-8 ml-4 mb-4">
-          Python Beginner Projects
-        </div>
-        <div>
-          <div className="flex flex-col-reverse md:flex-row md:ml-8 ml-4 justify-between">
-            <div>
-              <ul className="list-disc p-2 font-thin brightness-75">
+
+        <div className="contribution-section">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+            Python Beginner Projects
+          </h3>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <ul className="list-disc pl-4 sm:pl-5 space-y-2 sm:space-y-3 text-neutral-300 text-sm sm:text-base">
                 <li>
                   Created and maintained a popular GitHub repository, Python
                   Beginner Projects, designed as an accessible resource for
@@ -89,19 +104,20 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-            <div className="h-[30vh] w-[60vw] relative">
+            <div className="w-full md:w-1/2 aspect-video relative order-1 md:order-2">
               <Image
-                className="rounded-xl object-cover border border-white"
+                className="rounded-xl object-cover border border-neutral-700 hover:brightness-100 transition-all"
                 src="/Banner.png"
-                alt=""
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                alt="Python Beginner Projects Banner"
+                priority
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
