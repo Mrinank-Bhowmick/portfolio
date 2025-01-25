@@ -18,7 +18,7 @@ const Projects = () => {
           title="Res-Q Health"
           description="Built an AI-driven healthcare agent leveraging LLMs, vector databases, and sustainable serverless architecture for personalized public health support."
           projectImg={resqhealthImg}
-          liveLink="resq-health.vercel.app"
+          liveLink={"https://resq-health.vercel.app"}
           codeLink="https://github.com/Mrinank-Bhowmick/Res-Q-Health"
         />
         <Project

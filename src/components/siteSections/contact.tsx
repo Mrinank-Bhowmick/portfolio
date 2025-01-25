@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
@@ -23,6 +23,15 @@ const Contact = () => {
           <FaXTwitter className="w-6 h-6" />
           <Link href="https://x.com/mrinank110" className="text-blue-500">
             Twitter/X
+          </Link>
+        </div>
+        <div className="flex items-center bg-custom-light-gray px-3 py-2 rounded-lg gap-3 md:w-1/6 lg:w-1/6 w-full ">
+          <FaGithub className="w-6 h-6" />
+          <Link
+            href="https://github.com/Mrinank-Bhowmick/"
+            className="text-blue-500"
+          >
+            GitHub
           </Link>
         </div>
       </div>
