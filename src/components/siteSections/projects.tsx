@@ -58,7 +58,37 @@ const Projects = () => {
 
       <div className="space-y-8 sm:space-y-12">
         <div className="contribution-section">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-yellow-200">
+            Mastra AI - Mastra
+          </h3>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <ul className="list-disc pl-4 sm:pl-5 space-y-2 sm:space-y-3 text-neutral-300 text-sm sm:text-base">
+                <li>
+                  Added support for Sarvam AI voice (both TTS & STT) in Mastra
+                  Voice for Indian languages.
+                </li>
+                <li>
+                  Added open source voice model support using Cloudflare Workers
+                  AI provider
+                </li>
+              </ul>
+            </div>
+            <div className="w-full md:w-1/2 aspect-video relative order-1 md:order-2">
+              <Image
+                className="rounded-xl object-cover border border-neutral-700 hover:brightness-100 transition-all"
+                src="/mastra.png"
+                alt="Mastra AI framework"
+                priority
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="contribution-section">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-yellow-200">
             OWASP Foundation - Nettacker
           </h3>
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
@@ -95,7 +125,7 @@ const Projects = () => {
         </div>
 
         <div className="contribution-section">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-yellow-200">
             Python Beginner Projects
           </h3>
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
