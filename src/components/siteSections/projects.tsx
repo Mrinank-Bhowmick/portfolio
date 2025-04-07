@@ -3,6 +3,7 @@ import streaklensImg from "../../../public/streaklens.png";
 import garudaImg from "../../../public/Garuda.jpg";
 import resqhealthImg from "../../../public/resqhealth.png";
 import toxicityapi from "../../../public/toxicity-api.jpg";
+import verbalize from "../../../public/verbalize.png";
 import Image from "next/image";
 import { Project } from "@/components/projectSection";
 
@@ -15,6 +16,13 @@ const Projects = () => {
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
         <Project
+          title="Verbalize"
+          description="AI Chatbot as a Service"
+          projectImg={verbalize}
+          liveLink={"https://verbalize.mrinank-ai.tech/"}
+          codeLink="https://github.com/Mrinank-Bhowmick/verbalize"
+        />
+        <Project
           title="Res-Q Health"
           description="Built an AI-driven healthcare agent leveraging LLMs, vector databases, and sustainable serverless architecture for personalized public health support."
           projectImg={resqhealthImg}
@@ -25,7 +33,7 @@ const Projects = () => {
           title="Toxicity API"
           description="Designed to analyze text and detect harmful or abusive language with precision."
           projectImg={toxicityapi}
-          liveLink={"https://toxicity.mrinank.me/"}
+          liveLink={"https://toxicity.mrinank-ai.tech/"}
           codeLink="https://github.com/Mrinank-Bhowmick/toxicity-API"
         />
         <Project
