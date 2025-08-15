@@ -2,12 +2,14 @@
 import About from "@/components/siteSections/about";
 import Contact from "@/components/siteSections/contact";
 import Education from "@/components/siteSections/education";
+import Experience from "@/components/siteSections/experience";
 import Projects from "@/components/siteSections/projects";
 import React, { useRef } from "react";
 
 const Page = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
   const educationRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
@@ -35,6 +37,12 @@ const Page = () => {
               </div>
               <div
                 className="cursor-pointer bg-custom-light-gray p-2 rounded-xl"
+                onClick={() => scrollToSection(experienceRef)}
+              >
+                Experience
+              </div>
+              <div
+                className="cursor-pointer bg-custom-light-gray p-2 rounded-xl"
                 onClick={() => scrollToSection(educationRef)}
               >
                 Education
@@ -50,6 +58,9 @@ const Page = () => {
           <div>
             <div ref={aboutRef}>
               <About />
+            </div>
+            <div ref={experienceRef}>
+              <Experience />
             </div>
             <div ref={projectsRef}>
               <Projects />

@@ -27,16 +27,16 @@ const About = () => {
             Skills
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold brightness-75 mb-3">
+              <h3 className="text-sm font-semibold brightness-75 mb-2">
                 Techstacks
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {["Node", "NextJS", "SQL", "Cloudflare", "AWS"].map((tech) => (
                   <div
                     key={tech}
-                    className="flex items-center justify-center p-2 sm:p-3 bg-custom-light-gray rounded-2xl text-sm sm:text-base hover:bg-opacity-80 transition-colors"
+                    className="flex items-center justify-center p-1.5 sm:p-2 bg-custom-light-gray rounded-2xl text-xs sm:text-sm hover:bg-opacity-80 transition-colors"
                   >
                     {tech}
                   </div>
@@ -45,16 +45,32 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold brightness-75 mb-3">
+              <h3 className="text-sm font-semibold brightness-75 mb-2">
                 Programming Languages
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {["Javascript", "Typescript", "C/C++", "Python"].map((lang) => (
                   <div
                     key={lang}
-                    className="flex items-center justify-center p-2 sm:p-3 bg-custom-light-gray rounded-2xl text-sm sm:text-base hover:bg-opacity-80 transition-colors"
+                    className="flex items-center justify-center p-1.5 sm:p-2 bg-custom-light-gray rounded-2xl text-xs sm:text-sm hover:bg-opacity-80 transition-colors"
                   >
                     {lang}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold brightness-75 mb-2">
+                Database
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {["SQL DB", "Vector DB"].map((db) => (
+                  <div
+                    key={db}
+                    className="flex items-center justify-center p-1.5 sm:p-2 bg-custom-light-gray rounded-2xl text-xs sm:text-sm hover:bg-opacity-80 transition-colors"
+                  >
+                    {db}
                   </div>
                 ))}
               </div>

@@ -23,13 +23,6 @@ const Projects = () => {
           codeLink="https://github.com/Mrinank-Bhowmick/verbalize"
         />
         <Project
-          title="Res-Q Health"
-          description="Built an AI-driven healthcare agent leveraging LLMs, vector databases, and sustainable serverless architecture for personalized public health support."
-          projectImg={resqhealthImg}
-          liveLink={"https://resq-health.vercel.app"}
-          codeLink="https://github.com/Mrinank-Bhowmick/Res-Q-Health"
-        />
-        <Project
           title="Toxicity API"
           description="Designed to analyze text and detect harmful or abusive language with precision."
           projectImg={toxicityapi}
@@ -37,10 +30,17 @@ const Projects = () => {
           codeLink="https://github.com/Mrinank-Bhowmick/toxicity-API"
         />
         <Project
+          title="Res-Q Health"
+          description="Built an AI-driven healthcare agent leveraging LLMs, vector databases, and sustainable serverless architecture for personalized public health support."
+          projectImg={resqhealthImg}
+          liveLink={"https://resq-health.vercel.app"}
+          codeLink="https://github.com/Mrinank-Bhowmick/Res-Q-Health"
+        />
+        <Project
           title="Streaklens"
           description="Generative AI web app designed to assist content creators in generating innovative ideas for their next piece of content."
           projectImg={streaklensImg}
-          liveLink="https://streaklens.mrinank.me"
+          liveLink={null}
           codeLink="https://github.com/Mrinank-Bhowmick/streaklens"
         />
         <Project
@@ -97,6 +97,9 @@ const Projects = () => {
                 <li>
                   Added support for Google as an LLM & embedder in their
                   typescript package.
+                </li>
+                <li>
+                  Added support for Cloudflare vectorize for vector storage.
                 </li>
               </ul>
             </div>
