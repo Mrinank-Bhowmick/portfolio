@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
@@ -34,6 +35,7 @@ export default function RootLayout({
             <Sidebar />
           </div>
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
