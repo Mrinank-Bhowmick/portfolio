@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { BackgroundGradient } from "./ui/card";
 import Image, { StaticImageData } from "next/image";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 
 interface props {
@@ -11,56 +10,98 @@ interface props {
   projectImg: StaticImageData;
   liveLink: string | null;
   codeLink: string;
+  techStack?: string[];
+  features?: string[];
 }
+
 export function Project({
   title,
   description,
   projectImg,
   liveLink,
   codeLink,
+  techStack = [],
+  features = [],
 }: props) {
   return (
-    <div className="h-full w-full">
-      <BackgroundGradient className="rounded-[22px] w-full h-full p-4 sm:p-6 bg-white dark:bg-zinc-900 flex flex-col">
-        <div className="relative w-full aspect-video">
-          <Image
-            src={projectImg}
-            alt={title}
-            fill
-            className="object-cover rounded-lg"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <h3 className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200 font-semibold line-clamp-1">
-          {title}
-        </h3>
+    <div className="group relative h-full w-full rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-black border border-white/10 hover:border-yellow-500/50 transition-all duration-500 flex flex-col overflow-hidden hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.15)]">
+      {/* Image Section */}
+      <div className="relative w-full aspect-video overflow-hidden border-b border-white/5">
+        <Image
+          src={projectImg}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+      </div>
 
-        <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 flex-grow line-clamp-3">
+      {/* Content Section */}
+      <div className="flex flex-col flex-grow p-6 sm:p-8">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight group-hover:text-yellow-400 transition-colors duration-300">
+            {title}
+          </h3>
+        </div>
+
+        {/* Tech Stack Badges */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 text-xs font-medium rounded-full bg-zinc-800/50 text-zinc-300 border border-white/10 group-hover:border-yellow-500/20 transition-colors"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <p className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
           {description}
         </p>
-        <div className="flex flex-wrap gap-3 mt-4">
+
+        {/* Features List */}
+        {features.length > 0 && (
+          <div className="mb-8 bg-zinc-900/30 rounded-2xl p-5 border border-white/5">
+            <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">
+              Key Highlights
+            </h4>
+            <ul className="space-y-3">
+              {features.map((feature, index) => (
+                <li key={index} className="flex items-start gap-3 text-sm text-zinc-300">
+                  <FaCheckCircle className="mt-1 text-yellow-500 flex-shrink-0 text-xs" />
+                  <span className="opacity-90 leading-snug">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Action Buttons */}
+        <div className="mt-auto flex gap-4 pt-6 border-t border-white/5">
           {liveLink && (
             <Link
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-white dark:text-black bg-black dark:bg-white hover:opacity-90 transition-opacity flex items-center gap-2 text-sm font-medium"
+              className="flex-1 group/btn relative overflow-hidden rounded-xl bg-yellow-500 px-4 py-3.5 text-black font-bold text-sm transition-all hover:bg-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20 flex items-center justify-center gap-2"
             >
-              <span>Visit</span>
-              <FaExternalLinkAlt className="text-[10px] sm:text-xs" />
+              <span>Live Demo</span>
+              <FaExternalLinkAlt className="text-xs transition-transform group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
             </Link>
           )}
           <Link
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full px-3 sm:px-4 py-1.5 sm:py-2 border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors flex items-center gap-2 text-sm font-medium"
+            className={`flex-1 group/btn rounded-xl px-4 py-3.5 border border-white/10 bg-white/5 text-white font-medium text-sm transition-all hover:bg-white/10 hover:border-white/20 flex items-center justify-center gap-2 ${!liveLink ? 'w-full' : ''}`}
           >
+            <FaGithub className="text-lg" />
             <span>Source Code</span>
-            <FaExternalLinkAlt className="text-[10px] sm:text-xs" />
           </Link>
         </div>
-      </BackgroundGradient>
+      </div>
     </div>
   );
 }
