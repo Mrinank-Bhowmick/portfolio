@@ -15,11 +15,12 @@ const About = () => {
           AI-powered tools to contributing to open-source projects, I focus on
           leveraging technology to solve real-world problems.{" "}
           <span className="bg-yellow-500 text-black font-medium px-2 py-1 rounded-md inline-block my-2">
-            I am seeking internship opportunities
+            I am seeking internship/FT opportunities
           </span>{" "}
           where I can apply my skills to help businesses streamline operations,
           improve customer engagement, and drive growth through innovative tech
           solutions.
+          <div className="mt-2 italic text-sm">~ chatgpt</div>
         </div>
 
         <div className="flex flex-col gap-6 lg:w-2/5">

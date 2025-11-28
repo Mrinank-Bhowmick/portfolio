@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   description: "Personal Portfolio",
 };
 
+// Force static generation
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default function RootLayout({
   children,
 }: Readonly<{
