@@ -6,7 +6,8 @@ const Achievements = () => {
     {
       title: "Google Gen-AI Exchange Hackathon",
       achievement: "Finalist",
-      description: "Finalist in the Google Gen-AI Exchange Hackathon as part of the team.",
+      description:
+        "Finalist in the Google Gen-AI Exchange Hackathon as part of the team.",
       icon: FaTrophy,
     },
     {
@@ -20,7 +21,9 @@ const Achievements = () => {
   return (
     <div className="py-8">
       <h2 className="font-bold text-3xl sm:text-4xl text-white mb-12 tracking-tight">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Achievements</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">
+          Achievements
+        </span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -47,7 +50,7 @@ const Achievements = () => {
               </div>
 
               {/* Description */}
-              <p className="text-zinc-400 leading-relaxed text-sm sm:text-base">
+              <p className="text-zinc-300 leading-relaxed text-base sm:text-lg">
                 {achievement.description}
               </p>
 

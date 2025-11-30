@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
   position: relative;
   background-attachment: fixed;
+  font-size: 17px;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::before {

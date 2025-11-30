@@ -57,21 +57,24 @@ export function Project({
           ))}
         </div>
 
-        <p className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
+        <p className="text-zinc-300 text-base sm:text-lg leading-relaxed mb-8">
           {description}
         </p>
 
         {/* Features List */}
         {features.length > 0 && (
           <div className="mb-8 bg-zinc-900/30 rounded-2xl p-5 border border-white/5">
-            <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">
+            <h4 className="text-sm font-bold text-zinc-400 uppercase tracking-widest mb-4">
               Key Highlights
             </h4>
             <ul className="space-y-3">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3 text-sm text-zinc-300">
-                  <FaCheckCircle className="mt-1 text-yellow-500 flex-shrink-0 text-xs" />
-                  <span className="opacity-90 leading-snug">{feature}</span>
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-base text-zinc-300"
+                >
+                  <FaCheckCircle className="mt-1.5 text-yellow-500 flex-shrink-0 text-xs" />
+                  <span className="leading-relaxed">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -95,7 +98,9 @@ export function Project({
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex-1 group/btn rounded-xl px-4 py-3.5 border border-white/10 bg-white/5 text-white font-medium text-sm transition-all hover:bg-white/10 hover:border-white/20 flex items-center justify-center gap-2 ${!liveLink ? 'w-full' : ''}`}
+            className={`flex-1 group/btn rounded-xl px-4 py-3.5 border border-white/10 bg-white/5 text-white font-medium text-sm transition-all hover:bg-white/10 hover:border-white/20 flex items-center justify-center gap-2 ${
+              !liveLink ? "w-full" : ""
+            }`}
           >
             <FaGithub className="text-lg" />
             <span>Source Code</span>

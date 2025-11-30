@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 // Force static generation
-export const dynamic = 'force-static';
+export const dynamic = "force-static";
 export const revalidate = false;
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased text-white`}
       >
         <div className="flex flex-col md:flex-row">
           <div className="hidden md:block">
