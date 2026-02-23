@@ -14,14 +14,16 @@ interface props {
   features?: string[];
 }
 
+const EMPTY_STRINGS: string[] = [];
+
 export function Project({
   title,
   description,
   projectImg,
   liveLink,
   codeLink,
-  techStack = [],
-  features = [],
+  techStack = EMPTY_STRINGS,
+  features = EMPTY_STRINGS,
 }: props) {
   return (
     <div className="group relative h-full w-full rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-black border border-white/10 hover:border-yellow-500/50 transition-all duration-500 flex flex-col overflow-hidden hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.15)]">
@@ -47,9 +49,9 @@ export function Project({
 
         {/* Tech Stack Badges */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {techStack.map((tech, index) => (
+          {techStack.map((tech) => (
             <span
-              key={index}
+              key={tech}
               className="px-3 py-1 text-xs font-medium rounded-full bg-zinc-800/50 text-zinc-300 border border-white/10 group-hover:border-yellow-500/20 transition-colors"
             >
               {tech}
@@ -68,9 +70,9 @@ export function Project({
               Key Highlights
             </h4>
             <ul className="space-y-3">
-              {features.map((feature, index) => (
+              {features.map((feature) => (
                 <li
-                  key={index}
+                  key={feature}
                   className="flex items-start gap-3 text-base text-zinc-300"
                 >
                   <FaCheckCircle className="mt-1.5 text-yellow-500 flex-shrink-0 text-xs" />

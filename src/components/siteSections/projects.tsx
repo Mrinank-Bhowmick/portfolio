@@ -144,9 +144,9 @@ const Projects = () => {
                   "Added support for Google as an LLM & embedder in their typescript package.",
                   "Added support for Cloudflare vectorize for vector storage.",
                   "Fix embedder config schema to support embeddingDims and url parameters correctly.",
-                ].map((item, i) => (
+                ].map((item) => (
                   <li
-                    key={i}
+                    key={item}
                     className="flex items-start gap-3 text-zinc-300 hover:text-zinc-200 transition-colors"
                   >
                     <span className="mt-2 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0 shadow-[0_0_6px_rgba(245,142,11,0.6)]" />
@@ -186,9 +186,9 @@ const Projects = () => {
                 {[
                   "Added support for Sarvam AI voice (both TTS & STT) in Mastra Voice for Indian languages.",
                   "Added open source voice model support using Cloudflare Workers AI provider",
-                ].map((item, i) => (
+                ].map((item) => (
                   <li
-                    key={i}
+                    key={item}
                     className="flex items-start gap-3 text-zinc-300 hover:text-zinc-200 transition-colors"
                   >
                     <span className="mt-2 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0 shadow-[0_0_6px_rgba(245,142,11,0.6)]" />
@@ -229,9 +229,9 @@ const Projects = () => {
                   "Added POP3 brute force modules and expanded the tool's capabilities and potential impact in identifying security vulnerabilities.",
                   "Fixed language library issues which improved the tool's user experience, potentially leading to increased adoption and usage.",
                   "Translated the tool into Bengali language which increased accessibility and potential user base in Bengali-speaking regions.",
-                ].map((item, i) => (
+                ].map((item) => (
                   <li
-                    key={i}
+                    key={item}
                     className="flex items-start gap-3 text-zinc-300 hover:text-zinc-200 transition-colors"
                   >
                     <span className="mt-2 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0 shadow-[0_0_6px_rgba(245,142,11,0.6)]" />
@@ -271,9 +271,9 @@ const Projects = () => {
                 {[
                   "Created and maintained a popular GitHub repository, Python Beginner Projects, designed as an accessible resource for Python learners.",
                   "Achieved 2k+ stars on the repository, reflecting its popularity and value within the developer community.",
-                ].map((item, i) => (
+                ].map((item) => (
                   <li
-                    key={i}
+                    key={item}
                     className="flex items-start gap-3 text-zinc-300 hover:text-zinc-200 transition-colors"
                   >
                     <span className="mt-2 w-2 h-2 rounded-full bg-gold-500 flex-shrink-0 shadow-[0_0_6px_rgba(245,142,11,0.6)]" />

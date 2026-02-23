@@ -24,9 +24,9 @@ const Education = () => {
           <div className="hidden sm:block absolute left-[7px] top-2 bottom-0 w-[2px] bg-gradient-to-b from-gold-500 via-gold-500/20 to-transparent"></div>
 
           <div className="space-y-12">
-            {educationData.map((edu, index) => (
+            {educationData.map((edu) => (
               <div
-                key={index}
+                key={edu.school}
                 className="relative flex flex-col sm:flex-row gap-8 sm:gap-12"
               >
                 {/* Dot on the timeline */}

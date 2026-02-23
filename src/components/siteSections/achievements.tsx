@@ -27,11 +27,11 @@ const Achievements = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {achievementsData.map((achievement, index) => {
+        {achievementsData.map((achievement) => {
           const IconComponent = achievement.icon;
           return (
             <div
-              key={index}
+              key={achievement.title}
               className="group relative bg-zinc-900/30 border border-white/5 hover:border-gold-500/30 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(245,142,11,0.2)]"
             >
               {/* Icon */}

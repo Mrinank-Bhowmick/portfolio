@@ -18,6 +18,7 @@ const Sidebar = () => {
                   src={avatar}
                   alt="Profile"
                   fill
+                  sizes="(min-width: 1280px) 192px, 160px"
                   className="object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 contrast-110"
                   style={{
                     filter: "sepia(0.3) saturate(1.2) hue-rotate(25deg)",

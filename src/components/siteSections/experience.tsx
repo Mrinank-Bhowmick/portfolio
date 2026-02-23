@@ -48,9 +48,9 @@ const Experience = () => {
       </h2>
       <div className="container mx-auto">
         <div className="space-y-12">
-          {experienceData.map((exp, index) => (
+          {experienceData.map((exp) => (
             <div
-              key={index}
+              key={exp.company}
               className="group relative bg-zinc-900/30 border border-white/5 rounded-2xl p-6 sm:p-10 pl-12 sm:pl-16 hover:bg-zinc-900/50 hover:border-gold-500/30 transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(245,142,11,0.2)] overflow-hidden"
             >
               {/* Decorative corner accent */}
@@ -76,8 +76,8 @@ const Experience = () => {
               </p>
 
               <div className="space-y-4 mb-8">
-                {exp.experience.map((experienceItem, experienceIndex) => (
-                  <div key={experienceIndex} className="flex items-start gap-3">
+                {exp.experience.map((experienceItem) => (
+                  <div key={experienceItem} className="flex items-start gap-3">
                     <span className="text-yellow-500/50 mt-1.5 text-[10px]">
                       ●
                     </span>
@@ -93,9 +93,9 @@ const Experience = () => {
                   Technologies
                 </h4>
                 <div className="flex flex-wrap gap-2.5">
-                  {exp.skills.map((skill, skillIndex) => (
+                  {exp.skills.map((skill) => (
                     <span
-                      key={skillIndex}
+                      key={skill}
                       className="px-4 py-1.5 text-sm font-medium rounded-full bg-zinc-800/50 text-zinc-200 border border-white/5 hover:border-gold-500/30 hover:bg-gradient-to-r hover:from-gold-500/10 hover:to-gold-600/10 hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_-5px_rgba(245,142,11,0.2)] cursor-default"
                     >
                       {skill}
