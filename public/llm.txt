@@ -1,0 +1,139 @@
+# Mrinank Bhowmick — Portfolio
+
+> Personal portfolio of Mrinank Bhowmick, a Computer Science student and software developer specialising in full-stack web development, AI/ML systems, and open-source contributions.
+
+## About
+
+Mrinank Bhowmick is pursuing a Bachelor of Technology in Computer Science and Engineering from KIIT University (Kalinga Institute of Industrial Technology), Bhubaneswar, India (2022–2026).
+
+He has worked across multiple programming languages and tech stacks to build impactful projects, and actively contributes to open-source software. He is seeking opportunities to apply his technical skills in a team that works at scale and creates a positive impact on society.
+
+## Skills
+
+**Languages:** JavaScript, TypeScript, C/C++, Python
+
+**Frameworks:** Next.js, Hono, LangChain, Vercel AI SDK, Mastra, Gemini SDK
+
+**Infrastructure:** AWS, Cloudflare, Vercel
+
+**Databases:** SQL Database, Vector Database
+
+## Work Experience
+
+### Datacurve AI (YC W24) — Code Eval Team
+**Duration:** December 2025 – Present | Remote/US
+
+- Reviews and evaluates developer-submitted code for correctness, originality, and adherence to platform guidelines.
+- Provides detailed technical feedback, enforces submission standards, and maintains high-quality evaluation consistency across reviews.
+
+**Technologies:** Code Review, LLM Evaluation, Technical Writing, Remote Collaboration, TypeScript, Python
+
+---
+
+### TEXMiN IIT(ISM) — AI Intern
+**Duration:** June – July 2025 | Dhanbad, India
+
+- Engineered a self-hosted Agentic AI system with tool calling, human-in-the-loop workflows, and multimodal RAG; optimised for ~100 concurrent users with ~3s average response time.
+- Co-developed a real-time interactive AI avatar with autonomous reasoning, voice-based interaction, and dynamic human-in-loop feedback for natural, expressive conversations.
+
+**Technologies:** AI Agents, LLMs, RAG, Open Source, Self-Host, Full Stack Web Dev
+
+## Projects
+
+### Verbalize
+A Chatbot-as-a-Service platform that allows users to create, deploy, and embed AI-powered chatbots on any website.
+
+- Live: https://verbalize.its-mrinank.com/
+- Code: https://github.com/Mrinank-Bhowmick/verbalize
+- Stack: Next.js, Hono, Cloudflare Workers, SQL Database, TypeScript
+- Create and customise AI chatbots with custom system instructions
+- Embed chatbots on any website using a simple iframe code
+- Real-time AI streaming responses with sub-1 second latency
+- Manage multiple chatbots from a centralised dashboard
+- Deployed on edge network with serverless architecture
+
+---
+
+### Toxicity API
+API developed to analyse text and detect harmful or abusive language with precision using semantic search on vector databases.
+
+- Live: https://toxicity.its-mrinank.com/
+- Code: https://github.com/Mrinank-Bhowmick/toxicity-API
+- Stack: Next.js, Hono, Cloudflare Workers, Vector Database, TypeScript
+- Semantic search on vector database for each chunk of sentences ensures accurate detection
+- Analyses text to detect harmful or abusive language with high precision
+- Built on Cloudflare Workers for edge computing and low latency
+- Vector database integration for efficient similarity search
+
+---
+
+### Res-Q Health
+An AI-driven healthcare agent for day-to-day conversations, integrating various tools and external services to make better choices in daily consumption. ICDCIT Hackathon finalist project.
+
+- Live: https://resq-health.vercel.app
+- Code: https://github.com/Mrinank-Bhowmick/Res-Q-Health
+- Stack: AI Agents, LangChain, Vector Database, Serverless, Python
+- Bridges healthcare accessibility gaps in rural areas
+- Reduces carbon footprint by caching LLM responses
+- Promotes 'Label Padega India' campaign for dietary awareness
+- Combats pandemic misinformation with evidence-based AI solutions
+
+---
+
+### Streaklens
+A Generative AI web application designed to assist content creators in generating innovative ideas and scripts for their next piece of content.
+
+- Code: https://github.com/Mrinank-Bhowmick/streaklens
+- Stack: React, Node.js, Express, MongoDB, Gemini API
+- AI-powered content idea generation based on trends
+- Script writing assistance and optimisation
+- CRON job to fetch latest news
+
+---
+
+### Garuda
+A dual-purpose network security tool combining a Port Scanner and a Honeypot to detect vulnerabilities and monitor suspicious activities.
+
+- Code: https://github.com/Mrinank-Bhowmick/garuda
+- Stack: Python, Scapy, Socket Programming, Linux
+- Multi-threaded port scanning for rapid discovery
+- Interactive honeypot to trap and log attacker activity
+- Detailed reporting of open ports and potential threats
+- Customisable scan ranges and timeout settings
+
+## Open Source Contributions
+
+### Mem0 AI — Memory layer for AI Agents
+- Added support for Google as an LLM & embedder in their TypeScript package.
+- Added support for Cloudflare Vectorize for vector storage.
+- Fixed embedder config schema to support embeddingDims and url parameters correctly.
+
+### Mastra AI — TypeScript AI Framework
+- Added support for Sarvam AI voice (both TTS & STT) in Mastra Voice for Indian languages.
+- Added open-source voice model support using Cloudflare Workers AI provider.
+
+### OWASP Nettacker — Automated Penetration Testing Framework
+- Added POP3 brute force modules, expanding the tool's capabilities for identifying security vulnerabilities.
+- Fixed language library issues, improving the tool's user experience.
+- Translated the tool into the Bengali language, increasing accessibility for Bengali-speaking regions.
+
+### Python Beginner Projects — Educational Resource (2k+ stars)
+- Created and maintained a popular GitHub repository designed as an accessible resource for Python learners.
+- Achieved 2,000+ stars, reflecting its popularity and value within the developer community.
+
+## Education
+
+**Kalinga Institute of Industrial Technology (KIIT)**
+Bachelor of Technology, Major in Computer Science and Engineering
+2022 — 2026 | Bhubaneswar, India
+
+## Achievements
+
+- **Google Gen-AI Exchange Hackathon** — Finalist
+- **ICDCIT Hackathon** — Finalist
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/mrinank-bhowmick/
+- Twitter/X: https://x.com/mrinank110
+- GitHub: https://github.com/Mrinank-Bhowmick/
