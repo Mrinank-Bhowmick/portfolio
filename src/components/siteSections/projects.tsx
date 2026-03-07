@@ -21,7 +21,7 @@ const Projects = () => {
           title="Verbalize"
           description="A Chatbot-as-a-Service platform that allows users to create, deploy, and embed AI-powered chatbots on any website."
           projectImg={verbalize}
-          liveLink={"https://verbalize.mrinank-ai.tech/"}
+          liveLink={"https://verbalize.its-mrinank.com/"}
           codeLink="https://github.com/Mrinank-Bhowmick/verbalize"
           techStack={[
             "Next.js",
@@ -42,7 +42,7 @@ const Projects = () => {
           title="Toxicity API"
           description="API developed to analyze text and detect harmful or abusive language with precision using semantic search on vector databases."
           projectImg={toxicityapi}
-          liveLink={"https://toxicity.mrinank-ai.tech/"}
+          liveLink={"https://toxicity.its-mrinank.com/"}
           codeLink="https://github.com/Mrinank-Bhowmick/toxicity-API"
           techStack={[
             "Next.js",
