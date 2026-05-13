@@ -1,7 +1,7 @@
 const Experience = () => {
   const experienceData = [
     {
-      company: "Datacurve AI (YC W24)",
+      company: "Shipd by Datacurve (YC W24)",
       location: "Remote/US",
       role: "Code Eval Team",
       duration: "Dec 2025 - Apr 2026",
