@@ -4,7 +4,7 @@ const Experience = () => {
       company: "Datacurve AI (YC W24)",
       location: "Remote/US",
       role: "Code Eval Team",
-      duration: "Dec 2025 - Present",
+      duration: "Dec 2025 - Apr 2026",
       experience: [
         "Review and evaluate developer-submitted code for correctness, originality, and adherence to platform guidelines.",
         "Provide detailed technical feedback, enforce submission standards, and maintain high-quality evaluation consistency across reviews.",

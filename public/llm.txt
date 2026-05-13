@@ -21,7 +21,7 @@ He has worked across multiple programming languages and tech stacks to build imp
 ## Work Experience
 
 ### Datacurve AI (YC W24) — Code Eval Team
-**Duration:** December 2025 – Present | Remote/US
+**Duration:** December 2025 – April 2026 | Remote/US
 
 - Reviews and evaluates developer-submitted code for correctness, originality, and adherence to platform guidelines.
 - Provides detailed technical feedback, enforces submission standards, and maintains high-quality evaluation consistency across reviews.
