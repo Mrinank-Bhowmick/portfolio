@@ -26,11 +26,11 @@ const About = () => {
             projects.
             <br />
             <br />
-            <span className="bg-gradient-to-r from-gold-500/10 to-gold-600/10 text-gold-400 border border-gold-500/30 font-semibold px-3 py-1.5 rounded-lg inline-block my-1 shadow-[0_0_15px_-5px_rgba(245,142,11,0.2)]">
+            {/* <span className="bg-gradient-to-r from-gold-500/10 to-gold-600/10 text-gold-400 border border-gold-500/30 font-semibold px-3 py-1.5 rounded-lg inline-block my-1 shadow-[0_0_15px_-5px_rgba(245,142,11,0.2)]">
               I am seeking opportunities
-            </span>{" "}
-            to use my technical skills to contribute to a team that works at
-            scale and creates a positive impact on society.
+            </span>{" "} */}
+            I wish to use my technical skills to contribute to a team that works
+            at scale and creates a positive impact on society.
             <div className="mt-3 italic text-sm text-zinc-500">~ chatgpt</div>
           </div>
         </div>
